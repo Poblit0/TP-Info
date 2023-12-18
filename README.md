@@ -8,5 +8,5 @@ Projet d'informatique - Promotion ROB3 2023/2024
 
 <h2>Objectif principal</h2>
 <h>Il a deux programmes distincts :</h>
-<ul>Le premier fonctionne en limitant le robot à suivre le mur d'enceinte dit "Suivi de Mur", qui ne fonctionne que si la case noire est adjacente au contour du labyrinthe<\ul>
+<il>Le premier fonctionne en limitant le robot à suivre le mur d'enceinte dit "Suivi de Mur", qui ne fonctionne que si la case noire est adjacente au contour du labyrinthe<\il>
 <ul>Le second fonctionne sans aucunes restrictions dit "Libre", cependant celui-ci ne possède pas de grande efficacité car le robot explore au hasard le labyrinthe</ul>
