@@ -10,7 +10,7 @@ A voir sous forme de logigramme en cliquant ici
 
 La stratégie du robot est de suivre le mur de gauche, pour ce faire il applique les conditions de la fonction `wall_following` à la ligne 211 :
 
-` 
+
 - Si le robot ne détecte pas de mur devant lui (Capteurs : *Front left* et *Front right*), **alors il avance tout droit**
 - Si le robot détecte un mur devant lui (Capteurs : *Front left* et *Front right*), **alors il tourne à sa droite pour l'éviter**
 - Si le robot ne détecte pas de mur sur sa gauche (Capteurs : *Rear left*, *Left* et *Diag left*), **alors il tourne à gauche pour s'en rapprocher**
