@@ -8,21 +8,33 @@
 ## Fonctionnement du suivi de mur
 A voir sous forme de logigramme en cliquant ici
 
-- Si le robot ne détecte pas de mur devant lui (Capteurs : Front left et Front right), **alors il avance tout droit**
-
-- Si le robot détecte un mur devant lui (Capteurs : Front left et Front right), **alors il tourne à sa droite pour l'éviter**
-
-- Si le robot ne détecte pas de mur sur sa gauche (Capteurs : Rear left, Left et Diag left), **alors il tourne à gauche pour s'en rapprocher**
+- Si le robot ne détecte pas de mur devant lui (Capteurs : *Front left* et *Front right*), **alors il avance tout droit**
+- Si le robot détecte un mur devant lui (Capteurs : *Front left* et *Front right*), **alors il tourne à sa droite pour l'éviter**
+- Si le robot ne détecte pas de mur sur sa gauche (Capteurs : *Rear left*, *Left* et *Diag left*), **alors il tourne à gauche pour s'en rapprocher**
 
 ## Fonctionnement de la recherche aléatoire
 A voir sous forme de logigramme en cliquant ici
 
+La stratégie du robot est d'éviter les murs, pour se faire il applique les conditions suivantes :
 
+- Si le robot détecte un mur sur sa droite (Capteurs : *Rear right* et *Right*), **alors il tourne à gauche pour s'en éloingner**
+- Si le robot détecte un mur sur sa gauche (Capteurs : *Rear left* et *Left*), **alors il tourne à droite pour s'en éloingner**
+- Si le robot détecte un mur devant lui (Capteurs : *Front left* et *Front right*), **alors il tourne à gauche pour l'éviter**
+- Si le robot détecte un mur devant lui à droite (Capteurs : *Front right*), **alors il tourne à gauche pour l'éviter**
+- Si le robot détecte un mur devant lui à gauche (Capteurs : *Front left*), **alors il tourne à droite pour l'éviter**
+- Sinon le robot avance tout droit
 
+Une fois la case noire trouvée le robot alterne entre les 2 états :
+- Recherche aléatoire pendant **10s**
+- Suivi de mur pendant **60s**
 
+Cette méthode a pour objectif de se mettre à retrouver le mur d'enceinte et le suivre à nouveau pour atteindre la case rouge.
 
+Par conséquent, le robot va se déplacer aléatoirement pendant 10s pour trouver un mur au hasard.
 
+Et va le suivre pendant une longue durée pour être certain d'avoir parcourut tous les recoins de celui-ci.
 
+Ce temps peut être ajustable en fonction de la puissance de votre PC mais ce n'est vital que pour améliorer la performance et non le fait que le robot soit simplement fonctionnel.
 
 ## Problèmes de fonctionnement par rapport au PC utilisé
 
