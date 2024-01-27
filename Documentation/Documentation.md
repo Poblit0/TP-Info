@@ -55,8 +55,6 @@ Alors, il faut trouver une valeur convenable empiriquement, indiqué à la ligne
 
 Or, d'un ordinateur à l'autre, le déplacement du robot est plus ou moins rapide, à cause de la puissance de calcul.
 
-Exemple : sur mon PC cette valeur est -200
-
-tandis que sur mon ordinateur portable cette valeur est de -700
+Exemple : sur mon PC cette valeur est -200, tandis que sur mon ordinateur portable cette valeur est de -700
 
 Pour trouver votre bonne valeur, il est nécessaire de la trouver vous-même, sachez que la valeur -200 est celle attribuée au robot sur les vidéos disponibles dans le README.md
