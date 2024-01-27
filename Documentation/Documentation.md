@@ -8,19 +8,11 @@
 ## Fonctionnement du suivi de mur
 Sous forme de logigramme
 
-- Si le robot ne détecte pas de mur devant lui (Capteures : Front left et Front right),
+- Si le robot ne détecte pas de mur devant lui (Capteures : Front left et Front right), **alors il avance tout droit**
 
-alors il avance tout droit.
+- Si le robot détecte un mur devant lui (Capteures : Front left et Front right), **alors il tourne à sa droite pour l'éviter**
 
-- Si le robot détecte un mur devant lui (Capteures : Front left et Front right),
-
-alors il tourne à sa droite pour l'éviter.
-
-- Si le robot ne détecte pas de mur sur sa gauche (Capteurs : Rear left, Left et Diag left),
-
-alors il tourne à gauche pour s'en rapprocher.
-
-
+- Si le robot ne détecte pas de mur sur sa gauche (Capteurs : Rear left, Left et Diag left), **alors il tourne à gauche pour s'en rapprocher**
 
 ## Fonctionnement de la recherche aléatoire
 Sous forme de logigramme
