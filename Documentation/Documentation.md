@@ -15,16 +15,16 @@ A voir sous forme de logigramme en cliquant ici
 ## Fonctionnement de la recherche aléatoire
 A voir sous forme de logigramme en cliquant ici
 
-La stratégie du robot est d'éviter les murs, pour se faire il applique les conditions suivantes :
+La stratégie du robot est d'éviter les murs, pour ce faire il applique les conditions suivantes :
 
-- Si le robot détecte un mur sur sa droite (Capteurs : *Rear right* et *Right*), **alors il tourne à gauche pour s'en éloingner**
-- Si le robot détecte un mur sur sa gauche (Capteurs : *Rear left* et *Left*), **alors il tourne à droite pour s'en éloingner**
+- Si le robot détecte un mur sur sa droite (Capteurs : *Rear right* et *Right*), **alors il tourne à gauche pour s'en éloigner**
+- Si le robot détecte un mur sur sa gauche (Capteurs : *Rear left* et *Left*), **alors il tourne à droite pour s'en éloigner**
 - Si le robot détecte un mur devant lui (Capteurs : *Front left* et *Front right*), **alors il tourne à gauche pour l'éviter**
 - Si le robot détecte un mur devant lui à droite (Capteurs : *Front right*), **alors il tourne à gauche pour l'éviter**
 - Si le robot détecte un mur devant lui à gauche (Capteurs : *Front left*), **alors il tourne à droite pour l'éviter**
 - Sinon le robot avance tout droit
 
-Une fois la case noire trouvée le robot alterne entre les 2 états :
+Une fois la case noire trouvée, le robot alterne entre les 2 états :
 - Recherche aléatoire pendant **10s**
 - Suivi de mur pendant **60s**
 
@@ -32,9 +32,9 @@ Cette méthode a pour objectif de se mettre à retrouver le mur d'enceinte et le
 
 Par conséquent, le robot va se déplacer aléatoirement pendant 10s pour trouver un mur au hasard.
 
-Et va le suivre pendant une longue durée pour être certain d'avoir parcourut tous les recoins de celui-ci.
+Et va le suivre pendant une longue durée pour être certain d'avoir parcouru tous les recoins de celui-ci.
 
-Ce temps peut être ajustable en fonction de la puissance de votre PC mais ce n'est vital que pour améliorer la performance et non le fait que le robot soit simplement fonctionnel.
+Ce temps peut être ajustable en fonction de la puissance de votre PC, mais ce n'est vital que pour améliorer la performance et non le fait que le robot soit simplement fonctionnel.
 
 ## Problèmes de fonctionnement par rapport au PC utilisé
 
@@ -56,4 +56,4 @@ Exemple : sur mon PC cette valeur est -200
 
 tandis que sur mon ordinateur portable cette valeur est de -700
 
-Pour trouver votre bonne valeur, il est nécessaire de la trouver vous même, sachez que la valeur -200 est celle attribuée au robot sur les vidéos disponibles dans le README.md
+Pour trouver votre bonne valeur, il est nécessaire de la trouver vous-même, sachez que la valeur -200 est celle attribuée au robot sur les vidéos disponibles dans le README.md
