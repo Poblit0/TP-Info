@@ -6,7 +6,7 @@
 3. **Problèmes de fonctionnement par rapport au PC utilisé**
 
 ## Fonctionnement du suivi de mur
-Sous forme de logigramme
+A voir sous forme de logigramme en cliquant ici
 
 - Si le robot ne détecte pas de mur devant lui (Capteures : Front left et Front right), **alors il avance tout droit**
 
@@ -15,7 +15,7 @@ Sous forme de logigramme
 - Si le robot ne détecte pas de mur sur sa gauche (Capteurs : Rear left, Left et Diag left), **alors il tourne à gauche pour s'en rapprocher**
 
 ## Fonctionnement de la recherche aléatoire
-Sous forme de logigramme
+A voir sous forme de logigramme en cliquant ici
 
 
 
