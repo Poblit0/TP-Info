@@ -15,9 +15,9 @@ Durant ce 1er tour de labyrinthe, le robot est à la recherche de la case noire 
 
 Avec cette logique, 2 possibilités s'envisagent :
 - Le robot est passé sur la case noire avant de revenir sur la case rouge :
-- - Dans ce cas, lorsque le robot est passé sur la case noire, il va arrêter de suivre la fonction `black_found` et bascule sur la fonction `red_found` à la ligne 335, qui elle va rechercher la case rouge, puis clôturer le programme lorsque le robot se trouvera sur la case rouge.
+* - Dans ce cas, lorsque le robot est passé sur la case noire, il va arrêter de suivre la fonction `black_found` et bascule sur la fonction `red_found` à la ligne 335, qui elle va rechercher la case rouge, puis clôturer le programme lorsque le robot se trouvera sur la case rouge.
 - Le robot est revenu sur la case rouge sans être passé par la case noire :
-- - Dans ce cas, lorsque le robot se retrouve sur la case rouge sans avoir vu la case noire, il va arrêter de suivre la fonction `black_found` et bascule sur la fonction `noBlackWall` à la ligne 351, qui elle va déclencher la recherche aléatoire qui est expliqué dans le point 3 de cette documentation.
+* - Dans ce cas, lorsque le robot se retrouve sur la case rouge sans avoir vu la case noire, il va arrêter de suivre la fonction `black_found` et bascule sur la fonction `noBlackWall` à la ligne 351, qui elle va déclencher la recherche aléatoire qui est expliqué dans le point 3 de cette documentation.
 
 ## Fonctionnement du suivi de mur
 A voir sous forme de logigramme en cliquant ici
