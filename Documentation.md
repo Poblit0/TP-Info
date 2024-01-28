@@ -51,7 +51,7 @@ Cette méthode a pour objectif de se mettre à retrouver le mur d'enceinte et le
 
 Par conséquent, le robot va se déplacer aléatoirement pendant 10s pour trouver un mur au hasard.
 
-Et va le suivre pendant une longue durée pour être certain d'avoir parcouru tous les recoins de celui-ci.
+Et va le suivre pendant une longue durée (30s) pour être certain d'avoir parcouru tous les recoins de celui-ci.
 
 Ce temps peut être ajustable en fonction de la puissance de votre PC, mais ce n'est vital que pour améliorer la performance et non le fait que le robot soit simplement fonctionnel.
 
