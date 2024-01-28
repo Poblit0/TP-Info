@@ -15,9 +15,9 @@ Durant ce 1er tour de labyrinthe, le robot est à la recherche de la case noire 
 
 Avec cette logique, 2 possibilités s'envisagent :
 - Le robot est passé sur la case noire avant de revenir sur la case rouge :
-  - Dans ce cas, lorsque le robot est passé sur la case noire, il va arrêter de suivre la fonction `black_found` et bascule sur la fonction `red_found` à la ligne 331, qui elle va rechercher la case rouge, puis clôturer le programme lorsque le robot se trouvera sur la case rouge.
-- Le robot est revenu sur la case rouge sans être passé par la case noire :
-  - Dans ce cas, lorsque le robot se retrouve sur la case rouge sans avoir vu la case noire, il va arrêter de suivre la fonction `black_found` et bascule sur la fonction `noBlackWall` à la ligne 346, qui elle va déclencher la recherche aléatoire qui est expliqué dans le point 3 de cette documentation.
+  - Dans ce cas, lorsque le robot est passé sur la case noire, il va arrêter de suivre la fonction `black_found` et basculer sur la fonction `red_found` à la ligne 331, qui elle va rechercher la case rouge, puis clôturer le programme lorsque le robot se trouvera sur la case rouge.
+- Le robot est revenu sur la case rouge sans être passé sur la case noire :
+  - Dans ce cas, lorsque le robot se retrouve sur la case rouge sans avoir vu la case noire, il va arrêter de suivre la fonction `black_found` et basculer sur la fonction `noBlackWall` à la ligne 346, qui elle va déclencher la recherche aléatoire qui est expliquée dans le point 3 de cette documentation.
 
 ## Fonctionnement du suivi de mur
 A voir sous forme de logigramme en cliquant ici
@@ -45,7 +45,7 @@ Une fois la case noire trouvée, le robot alterne entre les 2 états :
 - Recherche aléatoire pendant **10s**
 - Suivi de mur pendant **30s**
 
-L'alternance entre ces 2 états est permis grâce à la fonction `waitThirtySeconds` à la ligne 250 qui maintient ces 2 états pendant 10s ou 30s selon l'état.
+L'alternance entre ces 2 états est permise grâce à la fonction `waitThirtySeconds` à la ligne 250 qui maintient ces 2 états pendant 10s ou 30s selon l'état.
 
 Cette méthode a pour objectif de se mettre à retrouver le mur d'enceinte et le suivre à nouveau pour atteindre la case rouge.
 
@@ -63,11 +63,9 @@ Pour cela, il suffit de regarder le temps que reste le robot sur du noir.
 
 Si ce temps est assez long, alors c'est qu'il s'agit de la case noire.
 
-Evidemment, il est possible que le robot suive une ligne noire par malchance, alors il faut que le temps soit le plus long possible sans que celui néglige que le robot ne passera surement pas au centre de celle-ci.
+Evidemment, il est possible que le robot suive une ligne noire par malchance, alors il faut que le temps soit le plus long possible sans que celui-ci néglige que le robot ne passera surement pas au centre de celle-ci.
 
-Alors, il faut trouver une valeur convenable empiriquement, indiqué à la ligne 75 du code :
-
-`int time_CELL = -200;`
+Alors, il faut trouver une valeur convenable empiriquement, indiqué à la ligne 75 du code : `int time_CELL = -200;`
 
 Or, d'un ordinateur à l'autre, le déplacement du robot est plus ou moins rapide, à cause de la puissance de calcul.
 
