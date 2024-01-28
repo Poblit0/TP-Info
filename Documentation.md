@@ -20,7 +20,7 @@ Avec cette logique, 2 possibilités s'envisagent :
   - Dans ce cas, lorsque le robot se retrouve sur la case rouge sans avoir vu la case noire, il va arrêter de suivre la fonction `black_found` et basculer sur la fonction `noBlackWall` à la ligne 346, qui elle va déclencher la recherche aléatoire qui est expliquée dans le point 3 de cette documentation.
 
 ## Fonctionnement du suivi de mur
-A voir sous forme de logigramme en cliquant ici
+[A voir sous forme de logigramme en cliquant ici](https://github.com/Poblit0/TP-Info/blob/main/Logigrammes/TP%20Info%20-%20Suivi%20de%20mur.pdf)
 
 La stratégie du robot est de suivre le mur de gauche, pour ce faire il applique les conditions de la fonction `wall_following` à la ligne 211 :
 
@@ -30,7 +30,7 @@ La stratégie du robot est de suivre le mur de gauche, pour ce faire il applique
 - Si le robot ne détecte pas de mur sur sa gauche (Capteurs : *Rear left*, *Left* et *Diag left*), **alors il tourne à gauche pour s'en rapprocher**.
 
 ## Fonctionnement de la recherche aléatoire
-A voir sous forme de logigramme en cliquant ici
+[A voir sous forme de logigramme en cliquant ici](https://github.com/Poblit0/TP-Info/blob/main/Logigrammes/TP%20Info%20-%20Recherche%20al%C3%A9atoire.pdf)
 
 La stratégie du robot est d'éviter les murs, pour ce faire il applique les conditions de la fonction `goCrazy` à la ligne 229 :
 
