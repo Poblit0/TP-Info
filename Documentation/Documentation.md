@@ -45,6 +45,8 @@ Une fois la case noire trouvée, le robot alterne entre les 2 états :
 - Recherche aléatoire pendant **10s**
 - Suivi de mur pendant **60s**
 
+L'alternance entre ces 2 états est permis grâce à la fonction `waitSixtySeconds` à la ligne 253 qui maintient ces 2 états pendant 10s ou 60s selon l'état.
+
 Cette méthode a pour objectif de se mettre à retrouver le mur d'enceinte et le suivre à nouveau pour atteindre la case rouge.
 
 Par conséquent, le robot va se déplacer aléatoirement pendant 10s pour trouver un mur au hasard.
