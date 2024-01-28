@@ -7,7 +7,7 @@
 4. **Problèmes de fonctionnement par rapport au PC utilisé**
 
 ## Logique fondamentale
-A voir sous forme de logigramme en cliquant ici
+[A voir sous forme de logigramme en cliquant ici](https://github.com/Poblit0/TP-Info/blob/main/Logigrammes/TP%20Info%20-%20Logique%20fondamentale.pdf)
 
 Le robot démarre sur la case rouge et se met à suivre le mur de gauche en appliquant la fonction `wall_following` à la ligne 211, il va donc réaliser un tour complet du labyrinthe.
 
